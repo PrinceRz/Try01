@@ -1,1 +1,5 @@
 2026/11/4
+今天成功实现gitee和github的SSH连接, 
+gitee的pull\push\merge\分支
+
+github仓库明天再试试
