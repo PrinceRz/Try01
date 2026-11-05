@@ -1,0 +1,31 @@
+1.git add .		###注意! checkout切换分支后 (记得提交保存) 没有的会藏起来
+放到本地暂存区
+
+2.git commit -m "xxx"
+提交到本地仓库
+
+3.git push (-u gitee dev )
+推送到远程仓库, 建立跟踪, .., 分支名
+
+4.git remote -v
+看远程仓库
+
+5.git checkout -b <xxx>
+新建分支并切换过去
+
+6.git merge <xxx>
+合并
+
+7.git rebase <主>
+并行变线性顺序
+
+8.git branch
+看在什么分支
+
+9.git log
+看记录
+
+10.git status
+看文件状态
+
+11.
