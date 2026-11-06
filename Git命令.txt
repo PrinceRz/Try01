@@ -1,31 +1,55 @@
-1.git add .		###注意! checkout切换分支后 (记得提交保存) 没有的会藏起来
-放到本地暂存区
-
-2.git commit -m "xxx"
+1.git commit -m "xxx"
 提交到本地仓库
 
-3.git push (-u gitee dev )
-推送到远程仓库, 建立跟踪, .., 分支名
+2.git branch (<xxx>)
+看在什么分支 / 创建新分支
+
+3.git checkout <xxx> (-b <xxx>)
+切换到分支 / 一步新建并切换
+
+4.git merge <xxx>
+合并, 把xxx合并到当前所在的分支
+
+5.git rebase <主>
+并行变线性顺序, 当前移到主后面
+
+6.git checkout HEAD
+指向最近提交, 决定父结点
+
+7.git checkout main^ / HEAD~3, 
+相对引用, 向上移动到父节点, 只能动HEAD! 
+
+8.git branch -f main HEAD~4
+强制main分支移动到上面几次
+
+
+
+3.git push -u gitee main 
+推送到远程仓库, -u = --set-upstream: 建立追踪关系, 分支名
+
+git push github dev:feature-login
+本地:远程
 
 4.git remote -v
 看远程仓库
 
-5.git checkout -b <xxx>
-新建分支并切换过去
+git remote add gitee <xxx.git>
+与远程仓库建立关联
 
-6.git merge <xxx>
-合并
+5.git checkout <xxx> (-b <xxx>)
+切换到分支 / 一步新建并切换
 
-7.git rebase <主>
-并行变线性顺序
 
-8.git branch
-看在什么分支
 
-9.git log
-看记录
+
+
+
+9.git log --oneline
+看提交记录 / 一行显示
 
 10.git status
 看文件状态
 
+1.git add .		###注意! checkout切换分支后 (记得提交保存) 没有的会藏起来
+放到本地暂存区
 11.
